@@ -12,8 +12,9 @@
         },
         {
             "type": "java",
-            "name": "Launch Main",
+            "name": "Main",
             "request": "launch",
+            "vmArgs": "-ea",
             "mainClass": "Main",
             "projectName": "lesson2_1a81600b"
         },
