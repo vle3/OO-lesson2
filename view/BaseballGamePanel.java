@@ -128,4 +128,14 @@ public class BaseballGamePanel
     {
         this.gameState = state;
     }
+
+    public BaseballGame getBaseball()
+    {
+        return baseball;
+    }
+
+    public void setBaseball(BaseballGame baseball)
+    {
+        this.baseball = baseball;
+    }
 }
