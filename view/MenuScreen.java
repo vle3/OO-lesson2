@@ -27,9 +27,9 @@ public class MenuScreen
         cp.add(BorderLayout.CENTER, menuPanel);
 
         var baseballButton = new JButton("Baseball Game");
-        var drawingButtong = new JButton("Triangle Drawing");
+        var drawingButton = new JButton("Triangle Drawing");
         menuPanel.add(baseballButton);
-        menuPanel.add(drawingButtong);
+        menuPanel.add(drawingButton);
 
         baseballButton.addActionListener(event -> {
             window.getContentPane().removeAll();
@@ -37,6 +37,14 @@ public class MenuScreen
             panel.init();
             window.pack();
             window.setVisible(true);
+        });
+
+        drawingButton.addActionListener(event -> {
+            window.getContentPane().removeAll();
+            var panel = new TriangleDrawingPanel(window);
+            panel.init();
+            window.pack();
+            window.revalidate();
         });
     }
 }
